@@ -63,8 +63,6 @@ module axi4_lite_interconnect_tb;
             if (aw_first) begin
                 send_aw(addr); send_w(data, strb);
             end else begin
-                // Present WVALID before AWVALID. WREADY is allowed to stay low
-                // until the interconnect has captured the write address.
                 @(negedge aclk);
                 m_wdata = data; m_wstrb = strb; m_wvalid = 1'b1;
                 repeat (2) @(negedge aclk);
