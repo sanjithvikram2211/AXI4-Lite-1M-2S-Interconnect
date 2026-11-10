@@ -259,13 +259,6 @@ The transcript should display the transaction results and:
 - Developing modular RTL using Verilog HDL.
 - Functional verification and waveform debugging using ModelSim.
 
-## Future Improvements
-
-- Support multiple outstanding transactions.
-- Extend the interconnect to support additional slave peripherals.
-- Implement arbitration for multiple masters.
-- Integrate AXI4-Lite peripherals with a RISC-V processor.
-- Perform synthesis and timing analysis.
 
 ---
 
