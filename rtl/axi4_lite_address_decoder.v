@@ -1,8 +1,6 @@
 `timescale 1ns/1ps
-// Address map:
 // Slave 0: 0x0000_0000 - 0x0000_0FFF
 // Slave 1: 0x0000_1000 - 0x0000_1FFF
-// Word-aligned accesses only. Everything else is DECERR.
 module axi4_lite_address_decoder (
     input  wire [31:0] addr,
     output reg         valid_addr,
